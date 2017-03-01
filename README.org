@@ -1,0 +1,17 @@
+* Simple Scala Web App
+
+This web app queries the airports existing in a given country (e.g.
+querying IT or Italy) and reports the top/bottom 10 countries for
+number of airports. Also it reports the top 10 runways for their
+presence in airports.
+
+To use the app run:
+#+BEGIN_SRC sh
+sbt run
+#+END_SRC
+
+and open your browser, for example with Firefox:
+
+#+BEGIN_SRC sh
+firefox http://localhost:9000/query
+#+END_SRC
