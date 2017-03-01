@@ -1,0 +1,32 @@
+@(query : String, results: List[(String,List[String])])
+
+@main("Query Results") {
+
+<h2>Query results for @query:</h2>
+
+<p>
+  
+<table>
+  <tbody>
+    <thead>
+      <tr>
+        <th>Airport</th>
+        <th>Runways</th>
+      </tr>
+    </thead>
+@for((airport,runways) <- results) {                        
+  <tr>
+    <td>
+      @airport
+    </td>
+    <td>
+      @for(runway <- runways) {
+                      @runway
+                      <p>
+      }
+    </td>
+  </tr>
+  }
+  </tbody>
+</table>
+}

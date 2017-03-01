@@ -1,0 +1,13 @@
+@(queryForm: Form[String])(implicit messages: Messages)
+
+@main("Query") {
+
+
+Please, insert the name or code of the country to know its available
+airports and their runaways:
+<br>
+  @helper.form(action = routes.QueryController.submit) {
+   <input type="text" id="query" name="query">
+   <input type="submit" value="Submit query">
+  }
+}

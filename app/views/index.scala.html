@@ -1,0 +1,12 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@main("Query & Report Simple Web App") {
+
+    <a href="@controllers.routes.QueryController.query">Query</a>
+    <a href="@controllers.routes.ReportController.report">Report</a>
+
+}
